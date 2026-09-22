@@ -25,7 +25,7 @@ npm test             # 로컬 단위 테스트 (혈당 모델·건강 지수·CS
 
 ## 웹 배포 (GitHub Pages)
 
-공개 주소는 <https://pujune.github.io/cgm-app-demo-basic/> 이며, 리포는 `github.com/PUJUNE/cgm-app-demo-basic` 임. `app.json`의 `experiments.baseUrl`이 `/cgm-app-demo-basic`으로 잡혀 있어 하위 경로에서 번들이 로드되고, `404.html`을 `index.html` 사본으로 두어 `/settings` 같은 딥링크도 새로고침 후 렌더됨.
+공개 주소는 <https://denko1020.github.io/cgm-app-demo-basic/> 이며, 리포는 `github.com/denko1020/cgm-app-demo-basic` 임. `app.json`의 `experiments.baseUrl`이 `/cgm-app-demo-basic`으로 잡혀 있어 하위 경로에서 번들이 로드되고, `404.html`을 `index.html` 사본으로 두어 `/settings` 같은 딥링크도 새로고침 후 렌더됨.
 
 배포는 `.github/workflows/deploy-pages.yml`이 맡음. main에 푸시하면 Actions가 `npm ci` → `tsc --noEmit` → `expo export --platform web` → Pages 배포를 순서대로 돌리며, 타입 오류가 있으면 배포 전에 멈춤. Pages 소스는 "GitHub Actions"이고 `github-pages` 환경의 배포 허용 브랜치에 main이 등록되어 있음. 푸시 후 1~2분이면 반영됨.
 
