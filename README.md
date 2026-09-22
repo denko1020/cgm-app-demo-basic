@@ -1,5 +1,7 @@
 # CGM Test Logger — 기본 버전 (basic)
 
+배포된 사이트: <https://denko1020.github.io/cgm-app-demo-basic/>
+
 CGM(연속혈당측정) 앱 화면의 기능을 브라우저에서 시험하기 위한 Expo(React Native) 프로토타입임. 한 코드베이스로 웹·iOS·Android를 모두 빌드하는 구조이며, 현재 단계는 웹에서 기능을 확인하는 구현 단계임.
 
 이 폴더는 원본 프로토타입에서 **운동 시뮬레이션과 반사실(counterfactual) 데이터 반영을 뺀 파생본**임. 남은 것과 빠진 것은 아래와 같음.
